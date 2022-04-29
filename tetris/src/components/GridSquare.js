@@ -1,3 +1,7 @@
+//Implement the overall grid square
+//1. Build the grid square component
+//2. Add styling
+
 import React from 'react'
 
 // Represents a grid square with a color
