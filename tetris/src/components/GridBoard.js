@@ -1,3 +1,8 @@
+//Implement the game board
+//1. Build the game board component using the grid squares
+//2. Import it into App.js
+//3. Style the board
+
 import React from 'react'
 import GridSquare from './GridSquare'
 

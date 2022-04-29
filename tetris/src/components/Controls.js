@@ -1,3 +1,8 @@
+//Implement the controls
+//1. Build out the Left, Right, Rotate, and Down controls
+//2. Style the controls
+//3. Add the controls to App.js
+
 import React from 'react'
 
 export default function Controls(props) {

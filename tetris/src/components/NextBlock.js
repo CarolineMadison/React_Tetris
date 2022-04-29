@@ -1,3 +1,7 @@
+//Implement the "next block" area
+//1. Build the next block component
+//2. Add style to the component
+//3. Add the component to App.js
 import React from 'react'
 import GridSquare from './GridSquare'
 
