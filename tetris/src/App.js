@@ -17,7 +17,6 @@ function App() {
       <ScoreBoard/>
       <Controls/>
       <MessagePopup/>
-
     </div>
   );
 }
