@@ -17,6 +17,7 @@ function App() {
       <ScoreBoard/>
       <Controls/>
       <MessagePopup/>
+      <random/>
     </div>
   );
 }
