@@ -3,4 +3,9 @@
 export const random = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min
 
+<<<<<<< HEAD
   }
+=======
+  }
+
+>>>>>>> ca26403bf64f28eab6f0e44d2616d49843de13fc
