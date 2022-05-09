@@ -4,6 +4,7 @@
 //3. Add the component to App.js
 
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 // Displays a message
 export default function MessagePopup(props) {

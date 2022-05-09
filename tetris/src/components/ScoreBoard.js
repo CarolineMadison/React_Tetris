@@ -2,9 +2,6 @@
 //1. Create the score board component with restart and play/resume buttons
 //2. Style the component
 //3. Add to App.js
-
-import React from 'react'
-
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { pause, resume, restart } from '../actions'

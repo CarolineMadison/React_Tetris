@@ -6,15 +6,23 @@ import {
   PAUSE, RESUME, RESTART, GAME_OVER
 } from '../actions'
 
-import { defaultState } from '../utils'
+import {
+  defaultState,
+  nextRotation,
+  canMoveTo } from '../utils'
 
 //The most common state shape for a Redux app is a plain Javascript object containing "slices" of domain-specific data at each top-level key. Similarly, the most common approach to writing reducer logic for that state shape is to have "slice reducer" functions, each with the same (state, action) signature, and each responsible for managing all updates to that specific slice of state. Multiple slice reducers can respond to the same action, independently update their own slice as needed, and the updated slices are combined into the new state object.
 
 const gameReducer = (state = defaultState(), action) => {
 
+  const { shape, grid, x, y, rotation, nextShape, score, isRunning } = state
+
   switch(action.type) {
     case ROTATE:
-
+      const newRotation = nextRotation(shape, rotation)
+      if (canMoveTo(shape, grid, x, y, newRotation)) {
+          return { ...state, rotation: newRotation }
+      }
       return state
 
     case MOVE_RIGHT:
