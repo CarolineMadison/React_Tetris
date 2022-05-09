@@ -4,6 +4,7 @@
 //3. Add to App.js
 
 import React from 'react'
+import { random } from '../utils'
 
 export default function ScoreBoard(props) {
     return (
@@ -13,7 +14,7 @@ export default function ScoreBoard(props) {
             <button className="score-board-button" onClick={(e) => {
             }}>Play</button>
             <button className="score-board-button" onClick={(e) => {
-            }}>Restart</button>
+            }}>Restart</button>s
         </div>
     )
 }
