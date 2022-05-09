@@ -18,7 +18,6 @@ export default function GridBoard(props) {
         for (let col = 0; col < 10; col ++) {
             grid[row].push(<GridSquare key={`${row}${col}`} color="1" />)  
         }
-       
     }
 
   // The components generated in makeGrid are rendered in div.grid-board

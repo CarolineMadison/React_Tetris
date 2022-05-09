@@ -20,12 +20,6 @@
     "eject": "react-scripts eject",
     "browser": "google-chrome"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",

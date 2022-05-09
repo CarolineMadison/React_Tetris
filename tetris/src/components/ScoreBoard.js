@@ -4,7 +4,6 @@
 //3. Add to App.js
 
 import React from 'react'
-import { random } from '../utils'
 
 export default function ScoreBoard(props) {
     return (
