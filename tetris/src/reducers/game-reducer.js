@@ -43,7 +43,6 @@ const gameReducer = (state = defaultState(), action) => {
       return state
 
     case MOVE_DOWN:
-    case MOVE_DOWN:
       // Get the next potential Y position
       const maybeY = y + 1
       // Check if the current block can move here
@@ -74,11 +73,11 @@ const gameReducer = (state = defaultState(), action) => {
 
     case RESUME:
 
-      return state
+      return { ...state, isRunning: true }
 
     case PAUSE:
 
-      return state
+      return { ...state, isRunning: false }
 
     case GAME_OVER:
 
