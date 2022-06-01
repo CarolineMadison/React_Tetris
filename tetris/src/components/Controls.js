@@ -11,43 +11,32 @@ export default function Controls(props) {
     const dispatch = useDispatch()
     const isRunning = useSelector((state) => state.isRunning)
     return (
-        <div className={`controls`}>
+        <div className="controls">
             {/* left */}
-            <button 
-                disabled={!isRunning || gameOver}
-                className="control-button" 
-                onClick={(e) => {
-                    if (!isRunning || gameOver) { return } 
-                    dispatch(moveLeft())
-                }}>Left</button>
+            <button className="control-button" onClick={(e) => {
+                if (!isRunning || gameOver) 
+                dispatch(moveLeft())
+            }}>Left</button>
 
             {/* right */}
-            <button 
-                disabled={!isRunning || gameOver}
-                className="control-button" 
-                onClick={(e) => {
-                    if (!isRunning || gameOver) { return } 
-                    dispatch(moveRight())
-                }}>Right</button>
+            <button className="control-button" onClick={(e) => {
+                if (!isRunning || gameOver) 
+                dispatch(moveRight())
+            }}>Right</button>
 
             {/* rotate */}
-            <button 
-                disabled={!isRunning || gameOver}
-                className="control-button" 
-                onClick={(e) => {
-                    if (!isRunning || gameOver) { return } 
-                    dispatch(rotate())
-                }}>Rotate</button>
+            <button className="control-button" onClick={(e) => {
+                if (!isRunning || gameOver) 
+                dispatch(rotate())
+            }}>Rotate</button>
 
             {/* down */}
-            <button 
-                disabled={!isRunning || gameOver}
-                className="control-button" 
-                onClick={(e) => {
-                    if (!isRunning || gameOver) { return } 
-                    dispatch(moveDown())
-                }}>Down</button>
+            <button className="control-button" onClick={(e) => {
+                if (!isRunning || gameOver) 
+                dispatch(moveDown())
+            }}>Down</button>
 
         </div>
     )
 }
+

@@ -38,7 +38,6 @@ export default function GridBoard(props) {
       progressTimeRef.current = 0
     }
     lastUpdateTimeRef.current = time
-    console.log(time)
   }
 
   /////////////
